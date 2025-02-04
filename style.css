@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial Black', sans-serif;
+    background: #1a1a1a url('images.png');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.container {
+    background: rgba(69, 0, 69, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #ff0099;
+    box-shadow: 0 0 20px rgba(255, 0, 153, 0.3);
+    text-align: center;
+    color: #ff99cc;
+}
+
+h1 {
+    color: #ff0099;
+    text-shadow: 0 0 10px rgba(255, 0, 153, 0.5);
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff66b3;
+    text-shadow: 1px 1px 2px #000;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    background: rgba(51, 51, 51, 0.6);
+    border: 2px solid #ff0099;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #ff99cc;
+    font-weight: bold;
+}
+
+#height-fields input {
+    width: 47%;
+    margin-right: 6%;
+}
+
+#height-fields input:last-child {
+    margin-right: 0;
+}
+
+button {
+    background: linear-gradient(to bottom, #ff0099, #cc0077);
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #ff66ff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Impact', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #cc0077;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 0, 153, 0.5);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    background: rgba(255, 0, 153, 0.2);
+    border: 1px solid #ff66ff;
+    padding: 15px;
+}
+
+#bmi-value {
+    font-weight: bold;
+    color: #ff00ff;
+    font-size: 24px;
+}
+
+#bmi-category {
+    font-weight: bold;
+}
+
+#gender-context {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff99cc;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dashed #ff0099;
+}
+
+#flirty-comment {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ff66ff;
+}

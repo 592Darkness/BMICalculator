@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Carnal Curves Calculator 🔥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💦 Body Mass Seduction 💦</h1>
+        <div class="input-group">
+            <label for="gender">Heat Level:</label>
+            <select id="gender">
+                <option value="male">Stallion 🐎</option>
+                <option value="female">Vixen 🍑</option>
+                <option value="other">Wild Card 🃏</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="unit-system">Unit System:</label>
+            <select id="unit-system">
+                <option value="imperial">Imperial (feet, inches, pounds)</option>
+                <option value="metric">Metric (cm, kg)</option>
+            </select>
+        </div>
+        <div class="input-group" id="height-input">
+            <label id="height-label"></label>
+            <div id="height-fields"></div>
+        </div>
+        <div class="input-group" id="weight-input">
+            <label id="weight-label"></label>
+            <input type="number" id="weight" placeholder="">
+        </div>
+        <button id="calculate-btn">Measure My Hotness 🍆💦</button>
+        <div id="result">
+            <p>Your BMI is: <span id="bmi-value"></span></p>
+            <p>BMI Category: <span id="bmi-category"></span></p>
+            <div id="gender-context"></div>
+            <p id="flirty-comment"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
