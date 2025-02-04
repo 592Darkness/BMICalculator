@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height */
     background-repeat: repeat;
     background-size: 100%;
 }
@@ -19,6 +19,8 @@ body {
     box-shadow: 0 0 20px rgba(255, 0, 153, 0.3);
     text-align: center;
     color: #ff99cc;
+    width: 90%; /* Add width for responsiveness */
+    max-width: 500px; /* Add max-width to limit container size on larger screens */
 }
 
 h1 {
@@ -27,6 +29,7 @@ h1 {
     font-family: 'Impact', sans-serif;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    font-size: 24px; /* Reduce font size for smaller screens */
 }
 
 .input-group {
@@ -39,6 +42,7 @@ label {
     font-weight: bold;
     color: #ff66b3;
     text-shadow: 1px 1px 2px #000;
+    font-size: 14px; /* Reduce font size for smaller screens */
 }
 
 input[type="number"],
@@ -51,11 +55,12 @@ select {
     box-sizing: border-box;
     color: #ff99cc;
     font-weight: bold;
+    font-size: 14px; /* Reduce font size for smaller screens */
 }
 
 #height-fields input {
-    width: 47%;
-    margin-right: 6%;
+    width: 47%; /* Make height inputs take up equal width */
+    margin-right: 6%; /* Add some space between height inputs */
 }
 
 #height-fields input:last-child {
@@ -74,6 +79,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.3s ease;
+    width: 100%; /* Make button take up full width */
 }
 
 button:hover {
@@ -84,7 +90,7 @@ button:hover {
 
 #result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px; /* Reduce font size for smaller screens */
     background: rgba(255, 0, 153, 0.2);
     border: 1px solid #ff66ff;
     padding: 15px;
@@ -93,16 +99,17 @@ button:hover {
 #bmi-value {
     font-weight: bold;
     color: #ff00ff;
-    font-size: 24px;
+    font-size: 20px; /* Reduce font size for smaller screens */
 }
 
 #bmi-category {
     font-weight: bold;
+    font-size: 16px;
 }
 
 #gender-context {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px; /* Reduce font size for smaller screens */
     color: #ff99cc;
     background: rgba(0, 0, 0, 0.4);
     padding: 10px;
@@ -114,4 +121,33 @@ button:hover {
     margin-top: 10px;
     font-style: italic;
     color: #ff66ff;
+    font-size: 14px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label,
+    input[type="number"],
+    select,
+    #result,
+    #bmi-category,
+    #gender-context,
+    #flirty-comment {
+        font-size: 14px;
+    }
+
+    #bmi-value {
+        font-size: 18px;
+    }
+    #height-fields input{
+        margin-right: 3%;
+    }
 }
